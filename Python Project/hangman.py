@@ -1,98 +1,98 @@
 import random
 def hangman():
-    words = random.choice(["pugger","littlepugger","tiger","lion","avenger","thor","spiderman","ironman","hulk","natasha"])
-    validLetter = "abcdefghijklmnopqrstuvwxyz"
-    true = 10
-    guessmade = " "
 
-    while len(words) > 0:
+    word = random.choice(["pugger" , "littlepugger" , "tiger" , "superman" , "thor" , "pokemon" , "avengers" , "savewater" , "earth" , "annable" ])
+    validLetters = 'abcdefghijklmnopqrstuvwxyz'
+    turns = 10
+    guessmade = ''
+
+    while len(word) > 0:
         main = ""
         missed = 0
 
-        for letter in words:
+        for letter in word:
             if letter in guessmade:
-                main = main + guessmade
+                main = main + letter
             else:
-                main = main + " _" + " "
-        if main == words:
-            print("main")
-            print("*****You Win******")
+                main = main + "_" + " "
+        if main == word:
+            print(main)
+            print("You win!")
             break
 
-        print("guess the word:",main)
-        guess = input()            
-        
-        if guess in validLetter:
+        print("Guess the word:" , main)
+        guess = input()
+
+        if guess in validLetters:
             guessmade = guessmade + guess
         else:
-            print("Enter the valid character")
-            # guess = input()
+            print("Enter a valid character")
+            guess = input()
 
-        if guess not in words:
-            turn = trun + 1  
-             
-            if turn == 9:
-                print("9 trun left ")
-                print(" --------- ")
-            if turn == 8:
-                print(" 8 trun left ")
-                print(" ----------- ")
-                print("     o      ")          
-            if turn == 7:
-                print(" 7 trun left ")
-                print(" ----------- ")
-                print("     o     ")          
-                print("     |     ")
-            if turn == 6:
-                print(" 6 trun left ")
-                print(" ----------- ")
-                print("     o     ")          
-                print("     |     ")
-                print("    /      ")
-            if turn == 5:
-                print(" 5 trun left ")
-                print(" ----------- ")
-                print("     o     ")          
-                print("     |     ")
+        if guess not in word:
+            turns = turns - 1
+            if turns == 9:
+                print("9 turns left")
+                print("  --------  ")
+            if turns == 8:
+                print("8 turns left")
+                print("  --------  ")
+                print("     O      ")
+            if turns == 7:
+                print("7 turns left")
+                print("  --------  ")
+                print("     O      ")
+                print("     |      ")
+            if turns == 6:
+                print("6 turns left")
+                print("  --------  ")
+                print("     O      ")
+                print("     |      ")
+                print("    /       ")
+            if turns == 5:
+                print("5 turns left")
+                print("  --------  ")
+                print("     O      ")
+                print("     |      ")
                 print("    / \     ")
-            if turn == 4:
-                print(" 4 trun left ")
-                print(" ----------- ")
-                print("   \ o     ")          
-                print("     |     ")
-                print("    / \     ")  
-            if turn == 3:
-                print(" 3 trun left ")
-                print(" ----------- ")
-                print("   \ o /   ")          
-                print("     |     ")
-                print("    / \     ")      
-            if turn == 2:
-                print(" 2 trun left ")
-                print(" ----------- ")
-                print("   \ o /|   ")          
-                print("     |     ")
-                print("    / \     ")    
-            if turn == 1:
-                print(" 1 trun left ")
-                print("Last breath to counting,take Care")
-                print(" ----------- ")
-                print("   \ o_|/   ")          
-                print("     |     ")
-                print("    / \     ")  
-            if turn == 0:
-                print(" 0 trun left ")
-                print("You loose!!!")
-                print("Your man was die ")
-                print(" ----------- ")
-                print("   \ o_/   ")          
-                print("     |     ")
-                print("    / \     ")               
-    
+            if turns == 4:
+                print("4 turns left")
+                print("  --------  ")
+                print("   \ O      ")
+                print("     |      ")
+                print("    / \     ")
+            if turns == 3:
+                print("3 turns left")
+                print("  --------  ")
+                print("   \ O /    ")
+                print("     |      ")
+                print("    / \     ")
+            if turns == 2:
+                print("2 turns left")
+                print("  --------  ")
+                print("   \ O /|   ")
+                print("     |      ")
+                print("    / \     ")
+            if turns == 1:
+                print("1 turns left")
+                print("Last breaths counting, Take care!")
+                print("  --------  ")
+                print("   \ O_|/   ")
+                print("     |      ")
+                print("    / \     ")
+            if turns == 0:
+                print("You loose")
+                print("You let a kind man die")
+                print("  --------  ")
+                print("     O_|    ")
+                print("    /|\      ")
+                print("    / \     ")
+                break
 
-Name = input("Enter your name :")
-print("Welcome",Name)
-print("*******************************")
-print("Try to guess the words in less than 10 attempts ")
+
+name = input("Enter your name")
+print("Welcome" , name )
+print("-------------------")
+print("try to guess the word in less than 10 attempts")
 hangman()
 print()

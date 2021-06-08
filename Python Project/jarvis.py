@@ -26,7 +26,7 @@ def wishme():
     speak("I am jarvis sir . Please tell me how may i help you")                   
 
 def takecommand():
-     
+    
     r = sr.Recognizer()
     with sr.Microphone() as source:
         print("Listening...")

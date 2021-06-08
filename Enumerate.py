@@ -1,15 +1,16 @@
-# sEnumerate function
-l1 = ["aloo" , "chowmin" , "burger" , "samosa"]
-i = 1
-for item in l1:
-    if i%3!=0:
-        print(f"this for you {item}")
-    i = i+1
+# # sEnumerate function
+# l1 = ["aloo" , "chowmin" , "burger" , "samosa"]
+# i = 1
+# for item in l1:
+#     if i%3!=0:
+#         print(f"this for you {item}")
+#     i = i+1
 
 
 # for index,item in enumerate(l1):
 #     if index%2==0:
 #         print(f"healthy food for me {item}")    
+
 
 
 # # *************MAP**************
@@ -20,10 +21,10 @@ for item in l1:
 # def cube(a):
 #     return a*a*a
 
-# fun = [sq,cube]
-# for i in range(10):
-#     bale = list(map(lambda x : x(i),fun))
-#     print(bale)   
+fun = [sq,cube]
+for i in range(10):
+    bale = list(map(lambda x : x(i),fun))
+    print(bale)   
 
 #*****************FILTER***************
 

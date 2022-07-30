@@ -6,7 +6,7 @@ def insertLetter(letter,pos):
 def spaceIsFree(pos):
     return board[pos] == ' '
 
-def printBoard(board):
+def printBoard(board):  
     print('   |   |   ')
     print(' ' + board[1] + ' | ' + board[2] + ' | ' + board[3])
     print('   |   |   ')
@@ -43,7 +43,7 @@ def playerMove():
             move = int(move)
             if move > 0 and move < 10:
                 if spaceIsFree(move):
-                    run = False
+                    run = False 
                     insertLetter('X' , move)
                 else:
                     print('Sorry, this space is occupied ')
@@ -131,3 +131,4 @@ while True:
         main()
     else:
         break
+  

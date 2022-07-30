@@ -18,7 +18,7 @@ print(next(girl))
 
 
 
-mycock = int(input("enter the value : "))
+mycock = input("enter the value : ")
 girl =  iter((mycock))
 print(next(girl))
 print(next(girl))

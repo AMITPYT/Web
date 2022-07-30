@@ -1,4 +1,4 @@
-import numpy as nps
+import numpy as np
 import pandas as pd 
 a = ['a','b','c','d','e']
 b = [1,2,3,4,5]

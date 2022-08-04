@@ -181,3 +181,31 @@
 // var fetch = count.fullAdd();
 // console.log(fetch);
 
+// var a=10;
+// {
+//     var a=-10;
+// }
+// let b =a;
+// {
+//     let b = -20;
+// }
+// console.log(b);
+
+// a promise
+// let promise = new Promise(function (resolve, reject) {
+//     setTimeout(function () {
+//     resolve('Promise resolved')}, 4000); 
+// });
+
+// // async function
+// async function asyncFunc() {
+
+//     // wait until the promise resolves 
+//     let result = await promise; 
+
+//     console.log(result);
+//     console.log('hello');
+// }
+
+// // calling the async function
+// asyncFunc();

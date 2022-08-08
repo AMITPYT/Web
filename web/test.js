@@ -169,7 +169,7 @@
 //     let b = c.reverse();
 //     console.log(b);
 // }
- 
+
 // var count = {
 //     country: "India",
 //     State: "Punjab",
@@ -209,3 +209,45 @@
 
 // // calling the async function
 // asyncFunc();
+
+// function find(arr, val) {
+//     var result = []
+//     for (var i = 0; i < arr.length; i++){
+//             if (arr[i] === val) {
+//                 result.push(i);
+//             } 
+//     }
+//     return result;
+// }
+// find(['j', 'd','a', 'f', 'c', 'a', 'a', 'v'], 'a')
+
+// function a(){
+//     var b = 5;
+//     function c(){
+//          var d = 6;
+         
+//         function e(){
+//             var f = 7;
+            
+//             function g(){
+//                 console.log(b);
+//                 console.log(d);
+//                 console.log(f);
+//             }
+//             g();
+//         } 
+//         e();
+        
+//     }
+//     c();
+// }
+// a();
+
+// console.log("Start");
+// setTimeout(() => {
+//     console.log("Hello !!!!!");
+// }, 5000);
+// setTimeout(() => {
+//     console.log("Amit");
+// }, 0);
+// console.log("End");

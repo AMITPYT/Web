@@ -271,14 +271,14 @@
 //     });
 
 
-console.log(" helli");
-let limit = 25;
-let sum = 60;
-var random = 2.77;
-for(let value = 1; value < limit; value= value+3){
-  console.log(random);
-  for(let j = 1; j<limit; j=j+2){
-    sum++;
-  }
-  console.log(sum);
-}
+// console.log(" helli");
+// let limit = 25;
+// let sum = 60;
+// var random = 2.77;
+// for(let value = 1; value < limit; value= value+3){
+//   console.log(random);
+//   for(let j = 1; j<limit; j=j+2){
+//     sum++;
+//   }
+//   console.log(sum);
+// }

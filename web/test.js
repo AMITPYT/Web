@@ -282,3 +282,95 @@
 //   }
 //   console.log(sum);
 // }
+
+// class y {
+//     constructor(id, name, age){
+//         this.id = id;
+//         this.name = name; 
+//         this.age = age;
+//     }
+// }
+// const x = new y(1, "amit", 22);
+// console.log(x);
+
+
+//  Call
+// var person1 = {firstName: 'Jon', lastName: 'Kuperman'};
+// var person2 = {firstName: 'Kelly', lastName: 'King'};
+
+// function say(greeting) {
+//     console.log(greeting + ' ' + this.firstName + ' ' + this.lastName);
+// }
+
+// say.call(person1, 'Hello'); 
+// say.call(person2, 'Hello'); 
+
+
+// //  Apply
+// var person1 = {firstName: 'Jon', lastName: 'Kuperman'};
+// var person2 = {firstName: 'Kelly', lastName: 'King'};
+
+// function say(greeting) {
+//     console.log(greeting + ' ' + this.firstName + ' ' + this.lastName);
+// }
+
+// say.apply(person1, ['Hello']); 
+// say.apply(person2, ['Hello']);
+
+
+// // Bind
+// var person1 = {firstName: 'Jon', lastName: 'Kuperman'};
+// var person2 = {firstName: 'Kelly', lastName: 'King'};
+
+// function say() {
+//     console.log('Hello ' + this.firstName + ' ' + this.lastName);
+// }
+
+// var sayHelloJon = say.bind(person1);
+// var sayHelloKelly = say.bind(person2);
+
+// sayHelloJon(); 
+// sayHelloKelly(); 
+
+//  Higher Order Function
+
+// function x(){
+//     console.log("HEllo");
+// }
+// function y(x){
+//     x();
+// }
+
+// Pure Function
+// function calculateGST( productPrice ) {
+//     return productPrice * 0.05;
+// }
+// calculateGST(12)
+
+
+// Star Pattern
+// let n = 5;
+// let string = "";
+// for (let i = 1; i <= n; i++) {
+//     // printing spaces
+//     for (let j = 0; j < n - i; j++) {
+//         string += "";
+//     }
+//     // printing star
+//     for (let k = 0; k < i; k++) {
+//         string += "*";
+//     }
+//     string += "\n";
+// }
+// console.log(string);
+
+//  OTP Generator
+// function generateOTP(){
+//     var digits = '0123456789';
+//     let otp = "";
+//     for(let i = 0; i < 6; i++){
+//         otp += digits[Math.floor(Math.random() * 10)];
+//     }
+//     return otp;
+// }
+// console.log(generateOTP());

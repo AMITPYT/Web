@@ -374,3 +374,113 @@
 //     return otp;
 // }
 // console.log(generateOTP());
+// function  time(am, pm){
+//     let day = 12;
+//     let night = 12
+//     let min = 45;
+//     let sec = 45
+
+//     if(am <= day){
+//         console.log(am +":"+min+":"+sec+"AM");
+//     }
+//     if(pm >= night) {
+//         console.log(pm +":"+min+":"+sec+"PM");
+//     } 
+// }
+// time(14,18)
+
+// var arr=[3, 2, 3, 3, 2, 4, 9, 3, 2, 2];
+// var rep_times = 1;
+// var value_inc = 0;
+// var item;
+// for (var i=0; i<arr.length; i++)
+// {
+//         for (var j=i; j<arr.length; j++)
+//         {
+//                 if (arr[i] == arr[j])
+//                 value_inc++;
+//                 if (rep_times<value_inc)
+//                 {
+//                   rep_times=value_inc; 
+//                   item = arr[i];
+//                 }
+//         }
+//         value_inc = 0;
+// }
+// console.log(item+" : "+rep_times) ;
+
+// var arr=[3, 2, 3, 3, 2, 4, 9, 3, 2, 2]
+// const s = {};
+// arr.forEach((x) =>{
+//     s[x] = s[x] + 1 || 1;
+//     // console.log(s[x]);
+
+// })
+// // console.log(s);
+// let k = Object.keys(s);
+// console.log(k);
+// let v = Object.values(s);
+// console.log(v);
+// console.log(Object.keys(v));
+// let max = Math.max(...v);
+// console.log(max);
+
+// let x = {id: 4, name: "Amit"}
+// x.id = 41
+// console.log(x);
+
+// function area(length){
+//     return function(height){
+//         return function(weith){
+//             return length * height* weith
+//         }
+//     }
+// }
+// area(4)(2)(5)
+
+// function x(value){
+//     console.log(value);
+// }
+// function y(z){
+//     let a = "Hi " + z;
+//     return a
+// }
+// let b = y("Amit");
+// x(b);
+
+// Find the average of largest and smallest numbers in an unsorted integer array?
+// const array = [1,4,3,2];
+//        let max = Math.max(...array);
+//        let min = Math.min(...array);
+//        let max_count = 0;
+//        let min_count = 0;
+//        for(let i = 0; i< array.length; i++){
+//            if(array[i] == max){
+//                max_count++;
+//            }
+//        }
+//        for(let j = 0; j< array.length; j++){
+
+//            if(array[j] == min){
+//                min_count++;
+//            }
+//        }
+//        let average = (max*max_count+min*min_count)/(min_count+max_count);
+//        console.log(average);
+
+
+// Find the counts of elements of an unsorted integer array which are equal to the average of all elements of that array.
+// let arr = [ 1,3,2,4,5];
+// let sum = 0;
+// let map = new Map();
+// for(let i=0; i<arr.length; i++){
+//   sum += arr[i];
+//   if(!map[arr[i]]){
+//     map[arr[i]] =1;
+//   }
+//   else{
+//     map[arr[i]] +=1;
+//   }
+// }
+// let avg = sum/arr.length;
+// console.log(map[avg]);

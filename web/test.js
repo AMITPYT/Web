@@ -484,3 +484,266 @@
 // }
 // let avg = sum/arr.length;
 // console.log(map[avg]);
+// let arr = [1, 5, 6, 8, 2, 4, 7, 3, 3];
+// console.log(arr);
+// let arr1 = arr.sort()
+// let new_arr = []
+// for(let i=0; i < arr1.length ; i++ ){
+//     new_arr.push(arr1.length-1-i)
+//     // console.log(arr1.length-1-i);
+//     if(new_arr.length==arr1.length){
+//         console.log(new_arr);
+//     }
+//         new_arr.push(arr1[i])
+// }
+
+// let a = "ajdiafd";
+// var obj = "";
+
+
+// function find(arr) {
+// 	const count = [];
+// 	for (let i = 0; i < arr.length; i++) {
+// 		const val = arr[i];
+// 		if (val in count) {
+// 			count[val] = count[val] + 1;
+// 		} else {
+// 			count[val] = 1;
+// 		}
+// 	}
+
+// 	for (let key in count) {
+// 		console.log(count[key] + ":" + key );
+// 	}
+// }
+// find(["a","j","d","i","a","f","d"]);
+
+// let arr = [1,2,3,4,5,6,7];
+// let new_arr = []
+// let new_arr1 = []
+// for(let i = 0; i<arr.length; i++){
+//     new_arr.push(arr[i]);
+//     new_arr1.push(arr.length-i);
+
+// }
+// console.log(new_arr);
+// console.log(new_arr1);
+
+// var arr1 = "john".split('');
+// var arr2 = arr1.reverse();
+// var arr3 = "jones".split('');
+// arr2.push(arr3);
+// console.log(arr2.slice(-1));
+// console.log("array 1: length=" + arr1.length + " last=" + arr1.slice(-1));
+// console.log("array 2: length=" + arr2.length + " last=" + arr2.slice(-1));
+
+// Pending
+// function myFunction(a, n) {
+//    if(n === a[n]){
+//     return a[n]
+//    }
+
+
+// }
+// myFunction([1, 2, 3, 4, 5], 3)
+// function myFunction(set, val) {
+//    for(let i = 0; i<set.length; i++){
+//     console.log(set[i]);
+//     if(set[i] === val) {
+//         return true;
+//     }
+//     else{
+//         return false
+//     }
+//    }
+
+
+// }
+// myFunction(new Set([1, 2, 3]), 2)
+
+// function myFunction(a, n){
+// console.log(a.charAt(n-1)); 
+// }
+// myFunction('abcd',1)
+
+// function myFunction(obj, key) {
+
+//     console.log(obj[key]);
+// }
+// myFunction({ continent: 'Sweden', country: 'Japan' }, 'continent')
+
+
+// function myFunction(a,b){
+// console.log({[a]: b});
+// }
+// myFunction('z','x')
+
+// function myFunction(a) {
+// console.log(a.slice(0, a.length / 2));
+
+// }
+// myFunction('abcdefgh')
+
+
+
+// function hhh(a, b){
+//     a = a.filter(function(item) {
+//         console.log( item !== b);
+//     })
+//     console.log(a)
+// }
+// hhh( [1, 2, 3, 4, 5, 3], 3)
+
+// function myFunction(a, b) {
+// var c = 0;
+// for (var i = 0; i < b.length; i++) {
+//     if (b.charAt(i) == a) {
+//         c += 1;
+//     }
+
+// }
+// return c;
+// }
+// console.log(myFunction('h', 'how many times does the character occur in this sentence?'));
+
+// function myFunction(set, val){
+//    let c = [""]
+//    let a=  set.delete(val);
+
+
+// }
+// myFunction(new Set([1, 2, 3]), 1)
+
+// function myFunction(a){
+//     console.log(a.toFixed(2));
+// }
+// myFunction(2.12397)
+// myFunction(3.136)
+// myFunction(1.12397)
+
+// ******** PENDING *************
+
+// function myFunction(a, b){  
+
+//         if(Object.keys(a) === b){
+//             console.log('true');
+//         }
+//         else{
+//             console.log('false');
+//         }
+//         console.log(Object.keys(a));
+// }
+// myFunction({a:1,b:2,c:3},'b')
+
+// function find(a,b){
+//     console.log(a[b-1]);
+// }
+// find([1,2,3,4,5], 2)
+
+// function myFunction(a){
+
+// var digits = a.toString().split('');
+// console.log(digits);
+// var realDigits = digits.map(Number)
+// console.log(realDigits);
+
+// }
+// myFunction(10)
+
+// function sum(a, b) {
+// var res=0;
+// var sort = a.sort(function (x, y) { return x - y })
+// for (var i = 0; i < sort.length; i++) {
+//     // console.log(sort[i]);
+//     if (sort[i] > b) {
+//         console.log(sort[i]);
+//         let n = sort[i];
+//         res += n
+
+
+//     }
+// }
+// console.log(res);
+
+// }
+// sum([1, 2, 3, 4, 5], 2)
+
+// function myFunction(arr){
+//     var longestWord = "";
+//     // console.log(longestWord);
+//     arr.forEach(function(word) {
+//       if(word.length > longestWord.length) {
+//         // console.log(word.length);
+//         console.log(longestWord.length);
+//         longestWord = word;
+//         // console.log(longestWord);
+//       }
+//     });
+
+//     console.log(longestWord);
+// }
+// myFunction(['I', 'need', 'candy'])
+
+// function myFunction(...arrays) {
+//     let a = [];
+//     arrays.forEach(ele => {
+//         (a.push(...ele));
+//      // console.log(ele);
+//     })
+//     console.log(a);
+// }
+// myFunction([1, 2, 3], [4, 5, 6])
+// myFunction(['a', 'b', 'c'], [4, 5, 6])
+// myFunction([true, true], [1, 2], ['a', 'b'])
+
+// function checkPrime(number) {
+//     for (var i = 2; i < number; i++) {
+//       if (number % i === 0) {
+//         return false;
+//       }
+//     }
+//     return true;
+//   }
+
+//   function myFunction(number) {
+//     if (checkPrime(number)) {
+//       return number;
+//     } else {
+//       while (checkPrime(number) === false) {
+//         number++;
+//       }
+//     }
+//     return number;
+//   }
+
+//   console.log(myFunction(38)); 
+//   console.log(myFunction(7));
+//   console.log(myFunction(115));
+//   console.log(myFunction(2000)); 
+
+
+// function  my(a,b){
+//     let c = a.concat(b);
+//     // console.log(c);
+//     let uniqueChars = c.filter((d, index) => {
+//         return c.indexOf(d) === index;
+//     });
+//     // console.log(uniqueChars);
+//     console.log(uniqueChars.sort(function (x, y) { return x - y }));
+// }
+// my([1, 2, 3], [3, 4, 5]);
+// my([-10, 22, 333, 42], [-11, 5, 22, 41, 42])  
+
+
+// function my(arr) {
+//     console.log(arr);
+//     if (arr === arr) {
+
+//         console.log("true");
+//     }
+//     else {
+//         console.log("false");
+//     }
+// }
+// my([true, true, true, true]);
+// my(['10', 10, 10, 10]);

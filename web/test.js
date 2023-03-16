@@ -735,15 +735,337 @@
 // my([-10, 22, 333, 42], [-11, 5, 22, 41, 42])  
 
 
-// function my(arr) {
-//     console.log(arr);
-//     if (arr === arr) {
+// Write a function that takes an array as argument. It should return true if all elements in the array are equal. It should return false otherwise.
+// const arr = ['10', 10, 10, 10]
+// const a = arr.every(x => x === arr[0])
+// console.log(a);
 
+// Write a function that takes an array of objects as argument. Sort the array by property b in ascending order. Return the sorted array
+// function myFunction(arr) {
+//     const sort = (x, y) => x.b - y.b;
+//      console.log(arr.sort(sort));
+//  }
+//  myFunction([{a:1,b:2},{a:5,b:4}])
+//  myFunction([{a:2,b:10},{a:5,b:4}])
+
+// Access the property of the Object
+// function myFunction(obj){
+//     let ob = obj['prop-2']
+//     console.log(ob);
+// }
+// myFunction({  one: 1,  'prop-2': 2})
+
+// key is in object or not
+// function myFunction(a, b) {
+//     // console.log(Object.keys(a));
+//     console.log(b in a ? 'true' : 'false');
+// }
+// myFunction({a:1,b:2,c:3},'a')
+// myFunction({x:'a',y:'b',z:undefined},'z')
+
+// function myFunction(a, b) {
+//     if(b in a ){
 //         console.log("true");
+//         // console.log(a[b]);
 //     }
-//     else {
+//      if( a[b] === null || a[b] === undefined){
 //         console.log("false");
 //     }
+//     // else{
+//     //     console.log("false");
+//     // }
 // }
-// my([true, true, true, true]);
-// my(['10', 10, 10, 10]);
+// myFunction({a:1,b:2,c:3},'b')
+// myFunction({x:'a',y:null,z:'c'},'y')
+// myFunction({x:'a',b:'b',z:undefined},'z')
+
+// function myFunction(a, b) {
+//     var result = {};
+//     a.forEach((key, i) => result[key] = b[i]);
+//     console.log(result);
+// }
+// myFunction(['a', 'b', 'c'], [1, 2, 3])
+
+// Delete the key b
+// function myFunction(obj) {
+//     console.log(delete obj['b']);
+//     console.log(obj);
+// }
+// myFunction({ a: 1, b: 7, c: 3 })
+// myFunction({ b: 0, a: 7, d: 8 })
+// myFunction({ e: 6, f: 4, b: 5, a: 3 })
+//  Multiply all values of 'a' by 'b'
+// function myFunction(a, b) {
+//     for (let key in a) {
+//         // console.log(typeof a[key]);
+//         if (typeof a[key] == 'number') {
+//           a[key] *= b;
+//           console.log(a[key]);
+//         }
+//       }
+// }
+// myFunction({a:1,b:2,c:3},3)
+// myFunction({j:9,i:2,x:3,z:4},10)
+
+// setInterval(() => {
+//     console.log("Hello !!!!!");
+// }, 1000);
+
+// function runThis(inputFunction) {
+//     inputFunction();
+//   }
+
+//   runThis(function() { console.log("Hello world") });
+
+// function solve(arr, rotations){
+//     if(rotations == 0) return arr;
+//     for(let i = 0; i < rotations; i++){
+//       let element = arr.pop();
+//       arr.unshift(element);
+//     }
+//     console.log(arr);
+//    }
+//    solve([44,1,22,111], 5);
+
+// let a = [1, 2, 3, 4, 5, 6];
+// var left = 10, right = 8;
+// var found = false;
+// var target = 5;
+// while(left <= right) {
+//    var mid = Math.floor((left + right) / 2);
+//    console.log(mid);
+//    if(a[mid] == target) {
+//        found = true;
+//        break;
+//    }
+//    else if(a[mid] < target) {
+//        left = mid + 1;
+//    }
+//    else {
+//        right = mid - 1;
+//    }
+// }
+// if(found) {
+//   console.log("Yes");
+// }
+// else {
+//     console.log("No");
+// }
+
+// function placed(arr) {
+//   let a = arr.remove(1)
+//   console.log(a);
+// }
+// placed([1, 3, 4, 5])
+
+// var value = 3
+
+// var arr = [1, 2, 3, 4, 5, 3]
+
+// arr = arr.filter(function(item) {
+//     return item !== value
+// })
+
+// console.log(arr)
+
+// const arr = [1, 2, 3, 5];
+// const arr1 = [1, 2, 3, 4, 5];
+// console.log(typeof(arr1));
+
+// if (arr.toString() === arr1.toString()) {
+//   console.log("1");
+// } else {
+//   console.log("0");
+// }
+
+// const arr = [1, 2, 3, 5];
+// const arr1 = [1, 2, 3, 4, 5];
+// let con =  arr.concat(arr1);
+// let duplicate = [...new Set(con)]
+// console.log(duplicate.sort());
+
+
+// const input = [{a:1},{b:2},{c:3}];
+// const output = Object.assign({}, ...input);
+
+// console.log(output);
+
+// const input = {a:1, b:2, c:3};
+// const output = Object.entries(input).map(([key, value]) => ({[key]: value}));
+// console.log(output)
+
+
+// let value = {name: "Amit"}
+// value= 54
+// console.log(typeof value);
+// if(!typeof value === 'string'){
+//     console.log("Not String");
+// }
+// else{
+//     console.log(" String");
+// }
+
+// const user = {
+//     email: 'amit767@gmail.com',
+//     updateEmail: (email) =>{
+//         this.email = email;
+//     }
+// }
+// user.updateEmail('mait87@gmail.com');
+// console.log(this.email);
+// console.log(user.email);
+
+// const animal = {}
+// let dog = {eat: "dogFood"}
+// let cat = {eat: "Milk"}
+
+// animal[dog] = {...dog, name: "Oscar"}
+// animal[cat] = {...cat, name: "kallu"}
+
+// console.log(animal[dog]);
+
+
+// let person = {name: "Amit"}
+// const member = [person]
+// person = null;
+//  console.log(member);
+
+// function checkOcc(data){
+//     if(data === {occ: "engineer"}){
+//         console.log("You are an engineer");
+//     }
+//     else if(data === {occ: "engineer"}){
+//         console.log("You are still an engineer");
+//     }
+//     else{
+//         console.log("You are not an engineer");
+//     }
+// }
+// console.log(checkOcc({occ: "engineer"})); 
+
+// const myPromise = () => Promise.resolve('i have resolved');
+
+// function firstFunction(){
+//     myPromise().then(res => console.log(res));
+//     console.log("First");
+// }
+// async function secondFunction(){
+//     console.log(await myPromise());
+//     console.log("Second");
+// }
+// firstFunction();
+// secondFunction();
+
+// let c = {name: "peter"};
+// let d;
+// d=c;
+// c.name = "amit";
+// console.log(d.name);
+
+// for(let i = 0; i<5; i++){
+//     if(i === 3) continue;
+//     console.log(i);
+// }
+
+// function sayHi() {
+//     console.log(name);
+//     console.log(age);
+//     var name = 'Ayush';
+//     let age = 21;
+//   }
+  
+//   sayHi();
+
+// var a = 10;
+// var b = a;
+// b = 20;
+
+// console.log(a);
+// console.log(b);
+
+// var a = 'Ayush';
+// var b = a;
+// b = 'Verma';
+
+// console.log(a);
+// console.log(b);
+
+// console.log(1 == '1');
+// console.log(false == '0');
+// console.log(true == '1');
+// console.log('1' == '01');
+// console.log(10 == 5 + 5);
+// console.log('1' - - '1'); 
+// console.log('1' + - '1'); Plus is used to concatination of the string
+
+// let lang = 'javascript';
+// (function(){
+//    let lang = 'java';
+// })();
+
+// console.log(lang); 
+
+// (function(){
+//    var lang2 = 'java';
+// })();
+
+// console.log(lang2);
+
+// let obj = {
+//     x: 2,
+//     getX: function() {
+//         console.log(this.x);
+//     }
+// }
+
+// obj.getX(); 
+
+// let x = 5;
+// let obj1 = {
+//     x: 2,
+//     getX:() => {
+//         console.log(this.x)
+//     }
+// }
+
+// obj.getX(); 
+
+// let x1 = 5;
+// let obj2 = {
+//     x1: 2,
+//     getX: function(){
+//         let x1 = 10;
+//         console.log(this.x);
+//     }
+// }
+
+// let y = obj.getX;
+// y();
+
+// (function(){
+//   var a = b = 3;
+// })();
+
+// console.log("a defined? " + (typeof a !== 'undefined'));
+// console.log("b defined? " + (typeof b !== 'undefined'));
+
+// var myObject = {
+//     foo: "bar",
+//     func: function() {
+//         var self = this;
+//         console.log("outer func:  this.foo = " + this.foo);
+//         console.log("outer func:  self.foo = " + self.foo);
+//         (function() {
+//             console.log("inner func:  this.foo = " + this.foo);
+//             console.log("inner func:  self.foo = " + self.foo);
+//         }());
+//     }
+// };
+// myObject.func();
+
+// var arr1 = "john".split('');
+// var arr2 = arr1.reverse();
+// var arr3 = "jones".split('');
+// arr2.push(arr3);
+// console.log("array 1: length=" + arr1.length + " last=" + arr1.slice(-1));
+// console.log("array 2: length=" + arr2.length + " last=" + arr2.slice(-1));

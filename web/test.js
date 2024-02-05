@@ -1069,3 +1069,167 @@
 // arr2.push(arr3);
 // console.log("array 1: length=" + arr1.length + " last=" + arr1.slice(-1));
 // console.log("array 2: length=" + arr2.length + " last=" + arr2.slice(-1));
+
+// function bracket_match(bracket_string){
+//     if(bracket_string === "(()())"){
+//         console.log("0");
+//     }else if(bracket_string === "((())"){
+//         console.log("1");
+//     }
+//     else{
+//         console.log("1");
+//     }
+// }
+// bracket_match("())")
+
+// function integer_to_roman(num) {
+//     const map = {
+//         M:  1000,
+//         CM: 900,
+//         D:  500,
+//         CD: 400,
+//         C:  100,
+//         XC: 90,
+//         L:  50,
+//         XL: 40,
+//         X:  10,
+//         IX: 9,
+//         V:  5,
+//         IV: 4,
+//         I:  1,
+//       };
+//       let result = '';
+
+//       for (key in map) {
+//         result += key.repeat(Math.floor(num / map[key]));
+//         num %= map[key];
+//         // console.log(map[key]);
+//         // console.log(num);
+//       }
+//       console.log(result);
+//     }
+// integer_to_roman(27);
+
+// let strs = ["flower", "flow", "flight", "dix"];
+// function longestCommonPrefix(strs) {
+//   // loop over the characters of the first element
+//   for (let j = 0; j < strs[0].length; j++) {
+//     // console.log(strs[0].length, "hg");
+//     // ignore the first elements since is obvious that is equal to itself
+//     for (let i = 1; i < strs.length; i++) {
+//       /* in case you have like
+//         [
+//           'banana',
+//           'bana'
+//         ]
+//         the longest prefix is the second element
+//        
+//       if (j >= strs[i].length) {
+//         // console.log(strs[i].length);
+//       }
+//       // different i-th element
+//       if (strs[0][j] != strs[i][j]) {
+//         //  console.log(strs[0].substr(0, j),"hgjggh");
+//         console.log(strs[i][j], "jh");
+//       }
+//     }
+//   }
+//   // all good, then the first element is common to all the other elements
+//   console.log(strs[0]);
+// }
+
+
+// longestCommonPrefix(strs);
+
+// console.log("Hello Amit");
+// setTimeout(function(){
+//     console.log("how are you");
+// }, 10000);
+
+// const a = [1,2,3,4,5]
+// const b = [1,2,3]
+// const result = a.filter(value => !b.includes(value));
+// console.log(result);
+
+// function findDuplicates(arr) {
+//     let sorted_arr = arr.sort();
+//     console.log(sorted_arr);
+//     let results = [];
+//     for (let i = 0; i < sorted_arr.length ; i++) s{
+//         // console.log(sorted_arr.length);
+//       if (sorted_arr[i+1] == sorted_arr[i]) {
+//         console.log(sorted_arr[i]);
+//         results.push([i]);
+//       }
+//     }
+//     console.log(results);
+// }
+// findDuplicates([9, 9, 3, 2, 3, 4, 4, 5, 7])
+
+// const str = "Hello there".split("");
+// let a = str.splice(2,3)
+// console.log(str.join( ''));
+
+// const numbers = [175, 50, 25]
+// let a  = numbers.reduce((x,y) =>{
+//     return x-y;
+// })
+// console.log(a);
+
+// let original_array = [1, 2, 3, 4, 5, 6];
+// let reversed_array = [];
+// for(let i = original_array.length-1 ; i >=0; i--){
+//     reversed_array.push(original_array[i])
+//        console.log(original_array[i]);
+// }
+// console.log(reversed_array);
+
+// const arr = [1000,2000,3000]
+// for(let a=0; a<arr.length; a++){
+//     setTimeout(() => {
+//        console.log(arr[a]);
+//     },a*1000);
+// }
+
+// let a = "The Quick Brown Fox"
+// var char = ''
+// for(let i=0; i<a.length; i++){
+//     char = a.charAt(i)
+//     if(char === char.toLowerCase()){
+//         console.log(char.toUpperCase());
+//     }
+//     else if(char === char.toUpperCase()){
+//         console.log(char.toLowerCase());
+//     }
+// }
+
+
+// var array1 = [16,0,2,3,1];
+// var array2 = [3,5,6,7,8,13];
+// var array3 = [];
+// if (array1.length >= array2.length)
+//     {
+//         array3 = array1.map(function(num, i) {
+//           return num + (array2[i] || 0 );
+//         });
+//     }else{
+//         array3 = array2.map(                                                                                                                       (num, i) {
+//           return num + (array1[i] || 0);
+//         });
+//     }
+//     console.log(array3);
+
+// function manipulateStudentRecord(obj, operation, prop, newValue){
+//   const n = {obj, operation, prop, newValue}
+//     n.newValue = "ooo"
+//     console.log(n);
+// }
+// manipulateStudentRecord("km", "kk", "klkl", "mmm")
+
+// const arr = ['16','j0','t2','3','o1']
+//     for(let i=0;i<arr.length;i++){
+//         const element = arr[i];
+//         if (typeof element === 'string' && isNaN(element)) {
+//           console.log(element);
+//         }
+//     }

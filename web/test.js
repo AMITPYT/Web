@@ -1233,3 +1233,299 @@
 //           console.log(element);
 //         }
 //     }
+
+// function capitalize(s) {
+//     let words = s.split(" "); // Split the string into an array of words
+//     for (let i = 0; i < words.length; i++) {
+//         let firstLetter = words[i].charAt(0).toUpperCase();
+//         console.log(firstLetter); // Capitalize the first letter of each word
+//         words[i] = firstLetter + words[i].slice(1); // Concatenate the capitalized first letter with the rest of the word
+//     }
+//     return words.join(" "); // Join the words back into a string
+// }
+
+// console.log(capitalize("this is an example"));
+
+
+// function remove(s, i) {
+//     // Write code here
+//     let split = s.split("");
+//     split.splice(i, 1);
+//     console.log(split.join(""));
+// }
+// remove("Example",3)
+
+// function mulWord(s, n) {
+//     // Write code here
+//     while(1<=n){
+//         console.log(s);
+//         n = n-1
+//     }
+// }
+// mulWord("Example",6)
+
+
+// function fibonacciIterative(n) {
+//     let fib = [0, 1]; // Starting with the first two elements of the Fibonacci series
+
+//     for (let i = 2; i < n; i++) {
+//         fib[i] = fib[i - 1] + fib[i - 2]; // Each number is the sum of the two preceding ones
+//     }
+
+//     return fib.slice(0, n); // Return the Fibonacci series up to the nth element
+// }
+
+// // Example usage:
+// console.log(fibonacciIterative(10));
+
+
+
+// function CompareLists(llist1, llist2) {
+//             if(llist1.length === llist2.length){
+//                 console.log("1");
+//             }
+//             else{
+//                 console.log("0");
+//             }
+// }
+
+// CompareLists([1,2,3,4,5],[1,2,3,4])
+
+
+// const arr = [2,2,3,4,5,6,6,7,8,8]
+// const result = [];
+
+// for(let i=0; i<arr.length; i++){
+//     if(arr[i + 1] !== arr[i]){
+//         result.push(arr[i]);
+//     }
+// }
+// console.log(result);
+
+
+
+// const a = {a:1, b:2, c:3}
+// let arr = []
+// arr.push(a)
+// console.log(arr);
+
+// const a = [ { a: 1, b: 2, c: 3 } ]
+// const [obj] = a;
+// console.log(obj);
+
+
+// function f(x){
+//     x = "x-" + x
+//     return function(y){
+//         y = "y-" + x
+//         return function(z){
+//             return "z-" +y;
+//         }
+//     }
+// }
+// let g = f('a')('b')('c');
+// console.log(g);
+
+
+
+
+// const a = [1, 2, 3, 4, 5];
+// const index = 2; 
+// const value = 6; 
+// const result = [];
+// for (let i = 0; i < a.length; i++) {
+//   if (i === index) {
+//     result.push(value);
+//   }
+//   result.push(a[i]);
+// }
+// console.log(result);
+
+
+
+
+// const orders = [
+//     { orderId: 1, amount: 100, status: 'completed' },
+//     { orderId: 2, amount: 150, status: 'pending' },
+//     { orderId: 3, amount: 200, status: 'completed' },
+//     { orderId: 4, amount: 50, status: 'cancelled' },
+//     { orderId: 5, amount: 300, status: 'completed' }
+// ];
+
+// const totalamount = orders.reduce((sum, order) => {
+
+//     if(order.status ==='completed'){
+//      return sum + order.amount;
+// }
+// return sum;
+// },0)
+// console.log(totalamount);
+
+
+// function myFunction(a, b) {
+//     var index = -1;
+//     for (let i = 0; i < b.length; i++) {
+//         if (b[i] === a) {
+//             index = i ;  
+//             console.log(index);
+        
+//         }
+//     }
+//     return index;  
+// }
+
+// console.log(myFunction('h', 'how many times does the character occur in this sentence?'));
+
+
+
+// const arr = [1,2,3,4,5,6,7,5,4]
+// let even = 0
+// let odd = 0
+
+// for(let i = 0; i < arr.length; i++){   
+//     if(arr[i] % 2 === 0){
+//         even += 1
+//     }
+//     else{
+//         odd += 1
+//     }
+// }
+
+// console.log(even,odd)
+
+
+// const arr = [10, 2, 3, 4, 5, 6, 7, 8, 9]
+// let len = arr.length
+// var sum = 0
+// for(let i = 0; i < len; i++){   
+//     sum += arr[i]/len
+// }
+//     console.log(sum);
+
+
+// let val = "1234";
+// let result = ""; 
+
+// for (var i = 0; i < val.length; i++) {
+//     if (val[i] === "0") {
+//         result += "Zero ";
+//     }
+//     else if (val[i] === "1") {
+//         result += "One ";
+//     }   
+//     else if (val[i] === "2") {            
+//         result += "Two ";
+//     }   
+//     else if (val[i] === "3") {
+//         result += "Three ";
+//     }
+//     else if (val[i] === "4") {
+//         result += "Four ";
+//     }
+//     else if (val[i] === "5") {
+//         result += "Five ";
+//     }
+//     else if (val[i] === "6") {
+//         result += "Six ";
+//     }
+//     else if (val[i] === "7") {
+//         result += "Seven ";
+//     }
+//     else if (val[i] === "8") {
+//         result += "Eight ";
+//     }
+//     else if (val[i] === "9") {
+//         result += "Nine ";
+//     }
+// }
+
+// console.log(result);
+
+
+// function isPerfectSquare(num) {
+//     const sqrt = Math.sqrt(num); 
+//     return Number.isInteger(sqrt);  
+// }
+
+// const number = 16;
+// if (isPerfectSquare(number)) {
+//     console.log(`${number} is a perfect square.`);
+// } else {
+//     console.log(`${number} is not a perfect square.`);
+// }
+
+// function findMaxInMatrix(matrix) {
+//     let max = -Infinity; 
+    
+//     for (let i = 0; i < matrix.length; i++) {
+//         for (let j = 0; j < matrix[i].length; j++) {
+//             if (matrix[i][j] > max) {
+//                 max = matrix[i][j]; 
+//             }
+//         }
+//     }
+    
+//     return max;
+// }
+
+
+// const matrix = [
+//     [3, 8, 2],
+//     [4, 7, 5],
+//     [9, 1, 6]
+// ];
+
+// const maxElement = findMaxInMatrix(matrix);
+// console.log(`The maximum element in the matrix is: ${maxElement}`);
+
+// let int = [1,1,1]
+// let sum = 0
+
+// for(let i = 0; i < int.length; i++){
+//     sum += int[i]   
+// }
+
+// console.log(sum)
+
+
+
+// function factorial(n)
+// {
+//     var res = 1
+//     for (let i = 1; i <= n; i++)
+//         res *= i;
+//     return res;
+// }
+
+
+//   console.log( factorial(100));
+
+
+
+// let n = 10
+// const arr = ['call', 'call', 'call']
+// let count = []
+// for(let i = 0; i < arr.length; i++){
+//     if(arr[i] === 'call'){
+//         count.push(n)
+//         n +=1
+//     }
+// }
+// console.log(count)
+
+
+// function count(init){
+//     let value1 = init+1;
+//     let value2 = init;
+//     let value3 = init-1;
+//     return [value1,value2, value3]; 
+// }
+// console.log(count(5));
+
+// let arr = [1,2,3,4,5,6,7,8,9,10]
+// let sum = []
+
+// for(let i = 0; i < arr.length; i
+//     sum.push(arr[i] + i)     
+// }
+// console.log(sum)
